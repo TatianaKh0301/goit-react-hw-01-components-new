@@ -13,7 +13,7 @@ export const TransactionHistoryTable = styled.table`
 export const TableRow = styled.tr`
     height: 50px;
 
-    &:nth-child(even) {
+    &:nth-of-type(even) {
         background-color: rgb(233, 238, 241);    
     }
 `;

@@ -1,4 +1,6 @@
+import PropTypes from 'prop-types';
 import { TableData } from "./TransactionHistoryDataRow.styled";
+
 export const TransactionHistoryDataRow = ({type, amount, currency}) => {
     console.log("type:", type);
     console.log("amount:", amount);
@@ -11,3 +13,9 @@ export const TransactionHistoryDataRow = ({type, amount, currency}) => {
         </>            
     );
 };
+
+TransactionHistoryDataRow.propTypes = {
+    type: PropTypes.string.isRequired,
+    amount: PropTypes.string.isRequired,
+    currency: PropTypes.string.isRequired,
+}
